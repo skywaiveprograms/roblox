@@ -14,3 +14,24 @@ end
 
 part.Touched:connect(onTouched)
 
+
+-- gayasf
+
+-- Close (button)
+local player = game.Players.LocalPlayer
+local character = player.Character
+if not character or not character.Parent then
+character = player.CharacterAdded:wait()
+end
+
+Instance.new("ForceField", character)
+character.Humanoid.WalkSpeed = 0
+character.Humanoid.JumpPower = 0
+
+script.Parent.MouseButton1Click:connect(function()
+character.Humanoid.WalkSpeed = 16
+character.Humanoid.JumpPower = 50
+character.ForceField:Remove()
+script.Parent.Parent.Parent:Destroy()
+end)
+
