@@ -6,6 +6,10 @@ part.CFrame = CFrame.new(1,6,0)
 part.BrickColor = BrickColor.Blue()
 part.Anchored = true
 
-while true do
-part.CFrame = part.CFrame * CFrame.Angles(0,.25,0)
+function onTouched(playerWhoTouched)
+if not playerWhoTouched.Parent then return end
+print("ok")
+
 end
+
+part.Touched:connect(onTouched)
