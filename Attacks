@@ -1,4 +1,4 @@
-# Core Code
+-- Main Code --
 
 Instance.new("Part", workspace)
 local part = workspace.Part
