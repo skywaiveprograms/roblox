@@ -1,4 +1,4 @@
--- Main Code
+-- Toucher Test
 
 Instance.new("Part", workspace)
 local part = workspace.Part
@@ -13,3 +13,4 @@ print("ok")
 end
 
 part.Touched:connect(onTouched)
+
