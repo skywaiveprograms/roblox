@@ -1,1 +1,7 @@
-c
+# Core Code
+
+Instance.new("Part", workspace)
+local part = workspace.Part
+part.CFrame = CFrame.new(1,6,0)
+part.BrickColor = BrickColor.Blue()
+part.Anchored = true
